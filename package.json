@@ -1,20 +1,10 @@
 {
-  "name": "@rbxts/sift",
+  "name": "@paradoxum-games/sift",
   "version": "0.0.9",
   "description": "Immutable data library for Luau",
-  "main": "out/init.lua",
-  "types": "out/index.d.ts",
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "build": "rbxtsc --type=package --rojo=''",
-    "watch": "rbxtsc -w",
-    "prepublishOnly": "npm run build"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/csqrl/sift.git"
+    "url": "git+https://github.com/paradoxum-games/sift.git"
   },
   "keywords": [
     "array",
@@ -32,15 +22,7 @@
   },
   "homepage": "https://csqrl.github.io/sift",
   "files": [
-    "out",
-    "!**/*.tsbuildinfo"
-  ],
-  "devDependencies": {
-    "@rbxts/compiler-types": "^1.2.3-types.0",
-    "@rbxts/types": "^1.0.515",
-    "rbxts-transform-debug": "^1.0.0-rc.1",
-    "rbxts-transform-env": "^1.0.0-rc.0",
-    "roblox-ts": "^1.2.7",
-    "typescript": "^4.3.5"
-  }
+    "src/**/*.lua",
+    "default.project.json"
+  ]
 }
